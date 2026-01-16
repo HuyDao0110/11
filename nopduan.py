@@ -61,7 +61,7 @@ with st.form('Order đồ uống'):
         'Loại thạch:': option_jelly,
         'Topping thêm:': ", ".join(option_toppings) if option_toppings else "Không thêm",
         'Số lượng:': nums,
-        'Note cho quán:': note
+        'Ghi chú cho quán:': note
     }
 
     submitted = st.form_submit_button("Xác nhận")
@@ -77,4 +77,5 @@ if print_bill:
     for x in bill:
         ans += str(x) + ' ' + str(bill[x]) + '\n'
     st.download_button('📥 Tải hóa đơn', ans)
+
 
