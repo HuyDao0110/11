@@ -1,7 +1,7 @@
 import streamlit as st
 
 with st.form('Order đồ uống'):
-    st.title("    🍸 𝐎𝐫𝐝𝐞𝐫 𝐲𝐨𝐮𝐫 𝐝𝐫𝐢𝐧𝐤 🍸")
+    st.title("⊹₊ ˚‧︵‿₊୨🍸 𝐎𝐫𝐝𝐞𝐫 𝐲𝐨𝐮𝐫 𝐝𝐫𝐢𝐧𝐤 🍸୧₊‿︵‧ ˚ ₊⊹")
 
     drinks = (
         'Trà sữa truyền thống',
@@ -77,6 +77,7 @@ if print_bill:
     for x in bill:
         ans += str(x) + ' ' + str(bill[x]) + '\n'
     st.download_button('📥 Tải hóa đơn', ans)
+
 
 
 
